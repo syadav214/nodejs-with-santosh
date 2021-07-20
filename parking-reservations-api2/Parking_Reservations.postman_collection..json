@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "7be932bd-f5a8-4623-abf2-327e5ac4126d",
+		"name": "Parking Reservations",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4000/v1/users",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"v1",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Available Slots",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4000/v1/parking-slots/available",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"v1",
+						"parking-slots",
+						"available"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register for slot",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "localhost:4000/v1/parking-slots/register/60e6dca2083401e417915072",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"v1",
+						"parking-slots",
+						"register",
+						"60e6dca2083401e417915072"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Occupy Slot",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "localhost:4000/v1/parking-slots/occupy/60e6dca2083401e417915072",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"v1",
+						"parking-slots",
+						"occupy",
+						"60e6dca2083401e417915072"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Leave Slot",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "localhost:4000/v1/parking-slots/leave/60e6dca2083401e417915073",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"v1",
+						"parking-slots",
+						"leave",
+						"60e6dca2083401e417915073"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Occupied Slots",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4000/v1/parking-slots/occupied",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"v1",
+						"parking-slots",
+						"occupied"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
