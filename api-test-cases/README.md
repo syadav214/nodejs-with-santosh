@@ -1,5 +1,3 @@
-# skApiTestCases
-
 Test cases in NodeJs using Mocha, Chai, Supertest and Mocha-Jenkins Reporter
 
 Below are the steps to get test results:
