@@ -1,0 +1,235 @@
+{
+	"info": {
+		"_postman_id": "2ea30476-e984-467a-b174-925051dfed99",
+		"name": "CompBill",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Default Get",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "{{cb-api-key}}"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:3001/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Company",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "x-api-key",
+						"value": "{{cb-api-key}}"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n \"project_ID\" :\"2\",\n \"name\":\"Test 2\",\n \"city\":\"Mumbai\",\n \"country\":\"India\",\n \"contactEmail\":\"test2@gmail.com\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3001/company",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"company"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Company",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "{{cb-api-key}}"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:3001/company",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"company"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Bill",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "x-api-key",
+						"value": "{{cb-api-key}}"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n \"company_ID\" :\"1\",\n \"date\":\"2014-09-10\",\n \"amount\":\"230\",\n \"billNumber\":\"12367\",\n \"dueDate\":\"2018-10-30\",\n \"comment\":\"Test Comment\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3001/bill",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"bill"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Bill",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "{{cb-api-key}}"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:3001/bills/0/0/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"bills",
+						"0",
+						"0",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Year",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "{{cb-api-key}}"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:3001/year",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"year"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Billl",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "x-api-key",
+						"value": "{{cb-api-key}}"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n \"date\":\"2014-09-10\",\n \"amount\":\"240\",\n \"billNumber\":\"1236\",\n \"dueDate\":\"2018-10-30\",\n \"comment\":\"Test Comment\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3001/bill/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"bill",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get a Bill",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "{{cb-api-key}}"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:3001/bill/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"bill",
+						"5"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
