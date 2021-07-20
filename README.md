@@ -1,6 +1,6 @@
-# skNode-ing
+# nodejs-with-santosh
 
-Doing stuff with NodeJs
+Practice Node.js
 
 ## Goals
 
