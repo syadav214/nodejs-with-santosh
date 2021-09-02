@@ -1,3 +1,0 @@
-#!/bin/bash
-
-mocha ../lib/unit_test.js
