@@ -1,0 +1,69 @@
+{
+	"info": {
+		"_postman_id": "028ca924-8701-4c87-8b5d-83084c321cff",
+		"name": "Shortest_URL_API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Encode",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"url\": \"https://github.com/ai/nanoid/\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3002/api/v1/url-shortner/encode",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"v1",
+						"url-shortner",
+						"encode"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Decode",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"url\": \"https://short.est/ngwPJFafY-\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3002/api/v1/url-shortner/decode",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"v1",
+						"url-shortner",
+						"decode"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
