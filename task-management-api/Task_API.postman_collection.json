@@ -1,0 +1,213 @@
+{
+	"info": {
+		"_postman_id": "509bbd1d-9ec1-4797-a78c-5873ba215ed9",
+		"name": "Task API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Task",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhbnRvc2hAZ21haWwuY29tIiwibmFtZSI6Im5vdGhpbmciLCJpYXQiOjE2Mjk1MjQ4MDUsImV4cCI6MTYyOTUzMjAwNX0.aniA8-tPHLbQxkj86mGyFCNfgDooct3uWPDCuHk1GIQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"mine\",\r\n    \"description\": \"mine\",\r\n    \"completionDateTime\": \"2020-02-05\",\r\n    \"reminderDateTime\": \"2015-01-05\",\r\n    \"isCompleted\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3001/api/task",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"task"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Tasks",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhbnRvc2hAZ21haWwuY29tIiwibmFtZSI6Im5vdGhpbmciLCJpYXQiOjE2Mjk1MjQ4MDUsImV4cCI6MTYyOTUzMjAwNX0.aniA8-tPHLbQxkj86mGyFCNfgDooct3uWPDCuHk1GIQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3001/api/task",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"task"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Task",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhbnRvc2hAZ21haWwuY29tIiwibmFtZSI6Im5vdGhpbmciLCJpYXQiOjE2Mjk1MjQ4MDUsImV4cCI6MTYyOTUzMjAwNX0.aniA8-tPHLbQxkj86mGyFCNfgDooct3uWPDCuHk1GIQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3001/api/task/611f9ed6e9120146bcf2b54a",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"task",
+						"611f9ed6e9120146bcf2b54a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Task",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhbnRvc2hAZ21haWwuY29tIiwibmFtZSI6Im5vdGhpbmciLCJpYXQiOjE2Mjk1MjQ4MDUsImV4cCI6MTYyOTUzMjAwNX0.aniA8-tPHLbQxkj86mGyFCNfgDooct3uWPDCuHk1GIQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3001/api/task/611f9ed6e9120146bcf2b54a",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"task",
+						"611f9ed6e9120146bcf2b54a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Task",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhbnRvc2hAZ21haWwuY29tIiwibmFtZSI6Im5vdGhpbmciLCJpYXQiOjE2Mjk1MjQ4MDUsImV4cCI6MTYyOTUzMjAwNX0.aniA8-tPHLbQxkj86mGyFCNfgDooct3uWPDCuHk1GIQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"ko\",\r\n    \"description\": \"op\",\r\n    \"completionDateTime\": \"2015-01-07\",\r\n    \"reminderDateTime\": \"2015-01-07\",\r\n    \"isCompleted\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3001/api/task/611f9ed6e9120146bcf2b54a",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"task",
+						"611f9ed6e9120146bcf2b54a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"santosh@gmail.com\",\r\n        \"password\": \"test\",\r\n        \"name\": \"nothing\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3001/api/user/register",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"user",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"santosh@gmail.com\",\r\n    \"password\": \"test\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3001/api/user/login",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

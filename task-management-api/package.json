@@ -1,0 +1,41 @@
+{
+  "name": "task-management-api",
+  "version": "1.0.0",
+  "description": "task managment api written using typescript, express and mongoose",
+  "scripts": {
+    "start": "nodemon",
+    "start:dev": "ts-node ./src/app.ts",
+    "test": "jest --coverage"
+  },
+  "keywords": [
+    "javascript",
+    "nodejs",
+    "typescript",
+    "expressjs"
+  ],
+  "author": "Santosh Yadav",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
+    "@types/body-parser": "^1.19.1",
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.13",
+    "@types/jest": "^27.0.1",
+    "@types/jsonwebtoken": "^8.5.5",
+    "@types/mongoose": "^5.11.97",
+    "@types/node": "^16.6.2",
+    "jest": "^27.0.6",
+    "nodemon": "^2.0.12",
+    "ts-jest": "^27.0.5",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.13.7"
+  }
+}
