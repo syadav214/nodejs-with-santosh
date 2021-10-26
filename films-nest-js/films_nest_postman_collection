@@ -1,0 +1,187 @@
+{
+	"info": {
+		"_postman_id": "f6966ce6-2102-4c56-9a17-ce81c3b19a5d",
+		"name": "Nest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": " Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InN5YWRhdjFAZ21haWwuY29tIiwiZXhwIjoxNjM4MTYwODQ0LjkyMSwiaWF0IjoxNjMyOTc2ODQ0fQ.G85W45D69sQQeXmrrCjCeHwISlZ6Mz2adgHpFpgIn8Y",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/films",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"films"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Film",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": " Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InN5YWRhdjFAZ21haWwuY29tIiwiZXhwIjoxNjM4MTYwODQ0LjkyMSwiaWF0IjoxNjMyOTc2ODQ0fQ.G85W45D69sQQeXmrrCjCeHwISlZ6Mz2adgHpFpgIn8Y",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"Ajooba\",\r\n        \"desc\": \"Ajooba\",\r\n        \"releaseDate\": \"2010-09-29T12:01:21.592Z\",\r\n        \"rating\": 5,\r\n        \"ticketPrice\": 500,\r\n        \"country\": \"USA\",\r\n        \"genre\": \"action\",\r\n        \"photo\": \"NA\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/films",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"films"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Film",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"NoAjjob\",\r\n    \"desc\": \"Ajooba\",\r\n    \"releaseDate\": \"2010-09-29T12:01:21.592Z\",\r\n    \"rating\": 5,\r\n    \"ticketPrice\": 500,\r\n    \"country\": \"USA\",\r\n    \"genre\": \"action\",\r\n    \"photo\": \"NA\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/films/615463932ada4fbe43b27a58",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"films",
+						"615463932ada4fbe43b27a58"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Film",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/films/615463932ada4fbe43b27a58",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"films",
+						"615463932ada4fbe43b27a58"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"syadav1@gmail.com\",\r\n    \"password\":\"test\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/users/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"syadav1@gmail.com\",\r\n    \"password\":\"test\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/users/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
