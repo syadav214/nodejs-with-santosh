@@ -25,7 +25,7 @@ class Tag
       html.push(child.toStringImpl(indent+1));
 
     html.push(`${i}</${this.name}>\n`);
-    return html.join();
+    return html.join('');
   }
 
   toString()
@@ -84,7 +84,7 @@ let html = [];
 html.push('<p>');
 html.push(hello);
 html.push('</p>');
-console.log(html.join());
+console.log(html.join(''));
 
 // a list with 2 words in it
 const words = ['hello', 'world'];
@@ -93,7 +93,7 @@ html.push('<ul>\n');
 for (let word of words)
   html.push(`  <li>${word}</li>\n`);
 html.push('</ul>');
-console.log(html.join());
+console.log(html.join(''));
 
 // ordinary non-fluent builder
 //let builder = new HtmlBuilder('ul');
