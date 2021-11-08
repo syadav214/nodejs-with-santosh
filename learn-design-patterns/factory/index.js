@@ -1,3 +1,5 @@
+// Crux: provide client to create object type of object using same class
+
 CoordinateSystem = {
     CARTESIAN: 0,
     POLAR: 1

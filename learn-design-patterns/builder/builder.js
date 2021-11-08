@@ -1,3 +1,4 @@
+// Crux: ability to assign values to properties without passing from constructor
 class Tag
 {
   static get indentSize() { return 2; }
